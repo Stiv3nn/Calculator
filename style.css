@@ -1,0 +1,201 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* PARAMETRI DELLO SFONDO INTERO */
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+}
+
+/* PARAMETRI DEL CONTENITORE DEI BUTTON */
+
+.calc {
+    border: 1px solid black;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.6);
+    background: transparent;
+}
+
+input {
+    width: 320px;
+    margin: 10px;
+    border: none;
+    padding: 24px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84, 84, 84, 0.1);
+    font-size: 40px;
+    text-align: right;
+    cursor: pointer;
+    color: white;
+}
+
+input::placeholder {
+    color: white;
+}
+
+button {
+    border: none;
+    width: 60px;
+    height: 60px;
+    margin: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: white;
+    font-size: 20px;
+    box-shadow: -9px -9px 16px rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.EQU {
+    background-color: #149b1a;
+}
+
+.op {
+    background-color: #fb7c14;
+}
+
+/* --------------------------------------------------------------------------- */
+
+/* PARAMETRI DELLE INFO PROGETTO */
+.info {
+    font-size: 20px;
+    color: rgb(147, 74, 0);
+    font-family: monospace;
+}
+
+#title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#creator {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#languages {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#description {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#date {
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 25px;
+    color: #464c5a;
+}
+
+
+/* ------------------- RESPONSIVE: TABLET ------------------- */
+@media screen and (max-width: 1024px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 40px 20px;
+    height: auto;
+    overflow-y: auto;
+  }
+
+  .info {
+    text-align: center;
+    max-width: 90%;
+    margin-bottom: 50px;
+  }
+
+  .calc {
+    width: 100%;
+    max-width: 420px;
+  }
+
+  .calc input {
+    width: 100%;
+    font-size: 32px;
+    padding: 18px;
+  }
+
+  button {
+    width: 65px;
+    height: 65px;
+    font-size: 20px;
+    margin: 8px;
+  }
+}
+
+/* ------------------- RESPONSIVE: TELEFONO ------------------- */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .info {
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .calc {
+    width: 100%;
+    max-width: 340px;
+    padding: 15px;
+  }
+
+  .calc input {
+    width: 100%;
+    font-size: 26px;
+    padding: 15px;
+  }
+
+  button {
+    width: 55px;
+    height: 55px;
+    font-size: 18px;
+    margin: 6px;
+  }
+}
+
+/* ------------------- EXTRA: TELEFONO PICCOLO (max 480px) ------------------- */
+@media screen and (max-width: 480px) {
+  .calc {
+    max-width: 300px;
+  }
+
+  .calc input {
+    font-size: 22px;
+    padding: 12px;
+  }
+
+  button {
+    width: 48px;
+    height: 48px;
+    font-size: 16px;
+    margin: 5px;
+  }
+
+  .info {
+    font-size: 16px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}
