@@ -143,6 +143,10 @@ button {
     padding: 20px 10px;
   }
 
+  #description{
+    display: none;
+  }
+
   .info {
     font-size: 17px;
     text-align: center;
