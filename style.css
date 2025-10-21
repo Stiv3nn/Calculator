@@ -141,6 +141,7 @@ button {
 @media screen and (max-width: 768px) {
   body {
     padding: 20px 10px;
+    height: 100%;
   }
 
   #description{
